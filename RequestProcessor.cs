@@ -76,7 +76,6 @@ public class RequestProcessor
     public async Task RunProcess()
     {
         // Настройка зависимостей
-        //var externalApiPool = _externalApiPool;
         //var processor = new RequestProcessor(externalApiPool, _logger, MaxConcurrency: 5, BatchSize: 50);
         var requests = GetData();
 
@@ -155,7 +154,7 @@ public class RequestProcessor
     {
         var results = new ConcurrentBag<Result>();
         var errors = new ConcurrentBag<Exception>();
-        var processedCount = 0;
+        //var processedCount = 0;
 
         using var semaphore = new SemaphoreSlim(maxConcurrency, maxConcurrency);
 
