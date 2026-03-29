@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "ProcessingAsyncWithExternalLlm": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      //"launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51856;http://localhost:51857"
+    }
+  }
+}
